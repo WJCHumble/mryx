@@ -1,0 +1,189 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>shoppingcart_frame</title>
+    <link rel="stylesheet" type="text/css" href="../css/api.css" />
+    <style type="text/css">
+    html,
+    body {
+        height: 100%;
+        background-color: #eee;
+    }
+    
+    .list {
+        display: block;
+        position: relative;
+        box-sizing: border-box;
+        width: 100%;
+        height: auto;
+    }
+    
+    .ware {
+        position: relative;
+        width: 100%;
+        height: 128px;
+        margin-bottom: 8px;
+        background-color: #fff;
+    }
+    
+    .ware .content {
+        position: relative;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+    
+    .ware .select {
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        top: 56px;
+        left: 8px;
+        background-repeat: no-repeat;
+        background-image: url(../image/select_on.png);
+        background-size: 100% 100%;
+        background-position: center center;
+        z-index: 2;
+    }
+    
+    .ware .select-off {
+        background-image: url(../image/select_off.png);
+    }
+    
+    .ware .thumbnail {
+        position: absolute;
+        top: 14px;
+        left: 32px;
+        height: 100px;
+        width: 100px;
+    }
+    
+    .ware .info {
+        position: relative;
+        box-sizing: border-box;
+        padding-left: 144px;
+        width: 100%;
+        height: 114px;
+        padding-right: 28px;
+    }
+    
+    .ware .info .name {
+        width: 100%;
+        height: 15px;
+        color: #555555;
+        margin-top: 14px;
+        font-size: 15px;
+    }
+    
+    .ware .info .price-tag {
+        margin-top: 10px;
+        width: 100%;
+        height: 12px;
+        font-size: 12px;
+        vertical-align: top;
+    }
+    
+    .ware .info .price-tag .price {
+        color: #e3007f;
+    }
+    
+    .ware .info .price-tag .unit {
+        font-size: 8px;
+        color: #cbcbcb;
+    }
+    
+    .ware .control {
+        position: absolute;
+        width: 110px;
+        height: 23px;
+        top: 53px;
+        right: 8px;
+    }
+    
+    .ware .control .minus {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 23px;
+        height: 23px;
+    }
+    
+    .ware .control .count {
+        position: relative;
+        top: 0;
+        margin-left: 31px;
+        margin-right: 31px;
+        width: auto;
+        height: 23px;
+        text-align: center;
+        line-height: 23px;
+        color: #444;
+        font-size: 12px;
+        background-image: url(../image/count.png);
+        background-repeat: no-repeat;
+        background-size: 48px 23px;
+    }
+    
+    .ware .control .add {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 23px;
+        height: 23px;
+    }
+    
+    .empty {
+        display: none;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        background-image: url(../image/shoppingcart_empty.png);
+        background-repeat: no-repeat;
+        background-size: 115px 190px;
+        background-position: center 50px;
+    }
+    
+    .active {
+        opacity: 0.7;
+    }
+    </style>
+</head>
+
+<body>
+    <section id="list" class="list">
+        <div id="ware_id" class="ware">
+            <div class="content">
+                <div class="select"></div>
+                <img class="thumbnail" src="../image/default_square.png">
+                <div class="info">
+                    <div class="name">商品名称</div>
+                    <div class="price-tag">
+                        <span class="price">￥价格</span>
+                        <span class="unit">/数量</span>
+                    </div>
+                </div>
+            </div>
+            <div class="control">
+                <img class="minus" src="../image/minus.png">
+                <div id="count_id" class="count">0</div>
+                <img class="add" src="../image/add.png">
+            </div>
+        </div>        
+    </section>
+    <section id="empty" class="empty"></section>
+</body>
+<script type="text/javascript" src="../script/api.js"></script>
+<script type="text/javascript">
+apiready = function() {
+
+};
+</script>
+
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>我的订单</title>
+    <link rel="stylesheet" type="text/css" href="../css/api.css" />
+    <style>
+    html,
+    body {
+        height: 100%;
+    }
+    
+    header {
+        width: 100%;
+        height: 50px;
+        background-color: #e3007f
+    }
+    
+    header .back {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 50px;
+        height: 50px;
+        z-index: 2;
+    }
+    
+    header .back img {
+        margin-top: 16px;
+        margin-left: 12px;
+        width: 11px;
+        height: 18px;
+    }
+    
+    header .title {
+        position: relative;
+        width: 100%;
+        height: 50px;
+        text-align: center;
+        color: #fff;
+        font-size: 20px;
+        line-height: 50px;
+    }
+    
+    nav {
+        position: relative;
+        box-sizing: border-box;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-flex-flow: row;
+        flex-flow: row;
+        width: 100%;
+        height: 40px;
+        padding-left: 16px;
+        padding-right: 16px;
+        background-color: #f0f0f0;
+    }
+    
+    nav .menu {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        flex: 1;
+        box-sizing: border-box;
+        padding-left: 30px;
+        height: 40px;
+        color: #444;
+        font-size: 14px;
+        text-align: center;
+        line-height: 40px;
+        border-bottom: 2px solid #f0f0f0;
+        background-repeat: no-repeat;
+        background-size: auto 14px;
+        background-position: 8px 13px;
+    }
+    
+    nav .menu:nth-child(1) {
+        background-image: url(../image/myorder_0.png);
+    }
+    
+    nav .menu:nth-child(1).selected {
+        background-image: url(../image/myorder_0_select.png);
+    }
+    
+    nav .menu:nth-child(2) {
+        background-image: url(../image/myorder_1.png);
+    }
+    
+    nav .menu:nth-child(2).selected {
+        background-image: url(../image/myorder_1_select.png);
+    }
+    
+    nav .menu:nth-child(3) {
+        background-image: url(../image/myorder_2.png);
+    }
+    
+    nav .menu:nth-child(3).selected {
+        background-image: url(../image/myorder_2_select.png);
+    }
+    
+    nav .menu:nth-child(4) {
+        background-image: url(../image/myorder_3.png);
+    }
+    
+    nav .menu:nth-child(4).selected {
+        background-image: url(../image/myorder_3_select.png);
+    }
+    
+    nav .selected {
+        font-weight: bolder;
+        color: #e3007f;
+        border-bottom: 2px solid #e3007f;
+    }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <div class="back">
+            <img src="../image/back.png">
+        </div>
+        <div class="title">
+            我的订单
+        </div>
+    </header>
+    <nav id="nav">
+        <div class="menu selected">待付款</div>
+        <div class="menu">待收款</div>
+        <div class="menu">已完成</div>
+    </nav>
+</body>
+<script type="text/javascript" src="../script/api.js"></script>
+<script type="text/javascript">
+apiready = function() {
+};
+</script>
+
+</html>

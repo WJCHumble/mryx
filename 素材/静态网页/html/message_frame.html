@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>消息Frame</title>
+    <link rel="stylesheet" type="text/css" href="../css/api.css" />
+    <style>
+    html,
+    body {
+        height: 100%;
+        background-color: #eee;
+    }
+    
+    .list {
+        position: relative;
+        height: auto;
+    }
+    
+    .list .message {
+        position: relative;
+        box-sizing: border-box;
+        height: auto;
+        margin-bottom: 8px;
+        background-color: #fff;
+    }
+    
+    .list .message .type {
+        position: relative;
+        box-sizing: border-box;
+        height: 30px;
+        padding-left: 40px;
+        color: #888;
+        font-size: 12px;
+        line-height: 30px;
+        background-repeat: no-repeat;
+        background-size: auto 16px;
+        background-image: url(../image/icon_user_coupon.png);
+        background-position: 8px center;
+    }
+    
+    .list .message .content {
+        position: relative;
+        box-sizing: border-box;
+        height: auto;
+        word-wrap: normal;
+        min-height: 24px;
+        padding-left: 12px;
+        color: #444;
+        font-size: 14px;
+        line-height: 24px;
+    }
+    
+    .list .message .tag {
+        position: relative;
+        height: 30px;
+        color: #888;
+    }
+    
+    .list .message .tag .time {
+        position: absolute;
+        box-sizing: border-box;
+        padding-left: 12px;
+        height: 30px;
+        text-align: left;
+        font-size: 10px;
+        line-height: 30px;
+    }
+    
+    .list .message .tag .arrow {
+        position: absolute;
+        box-sizing: border-box;
+        padding-right: 16px;
+        right: 0;
+        height: 30px;
+        margin-right: 12px;
+        text-align: right;
+        font-size: 10px;
+        line-height: 30px;
+        background-image: url(../image/arrow_right.png);
+        background-repeat: no-repeat;
+        background-size: 10px 16px;
+        background-position: right center;
+    }
+    
+    .highlight {
+        opacity: 0.7;
+    }
+    </style>
+</head>
+
+<body>
+    <section id="list" class="list">
+        <div class="message" tapmode="highlight">
+            <div class="type">优惠提醒</div>
+            <div class="content">【每日优鲜】尊敬的客户，您领到一张新的优惠卷。快去看看吧~！</div>
+            <div class="tag">
+                <div class="time">2016-02-26 12:02:08</div>
+                <div class="arrow">查看详情</div>
+            </div>
+        </div>
+        <div class="message" tapmode="highlight">
+            <div class="type">优惠提醒</div>
+            <div class="content">【每日优鲜】尊敬的客户，您领到一张新的优惠卷。快去看看吧~！</div>
+            <div class="tag">
+                <div class="time">2016-02-25 11:30:33</div>
+                <div class="arrow">查看详情</div>
+            </div>
+        </div>
+    </section>
+</body>
+<script type="text/javascript" src="../script/api.js"></script>
+<script type="text/javascript">
+apiready = function() {
+
+};
+</script>
+
+</html>

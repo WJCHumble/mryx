@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>首页</title>
+    <link rel="stylesheet" type="text/css" href="../css/api.css" />
+    <style>
+    header {
+        position: relative;
+        width: 100%;
+        height: 50px;
+        background-color: #e1017e;
+    }
+    
+    header .left {
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        width: 90px;
+        height: 50px;
+    }
+    
+    header .left .arrow-down {
+        position: absolute;
+        top: 21px;
+        left: 12px;
+        width: 13px;
+        height: 8px;
+        background-image: url(../image/arrow_down.png);
+        background-size: 13px 8px;
+        -webkit-transition: all 200ms;
+        transition: all 200ms;
+    }
+    
+    header .left .arrow-up {
+        -webkit-transform: rotate(-180deg);
+        transform: rotate(-180deg);
+    }
+    
+    header .left .city-text {
+        width: 100%;
+        box-sizing: border-box;
+        height: 14px;
+        padding-left: 28px;
+        padding-top: 18px;
+        line-height: 14px;
+        font-size: 14px;
+        text-align: left;
+        color: #fff;
+    }
+    
+    header .title {
+        position: relative;
+        top: 15px;
+        height: 20px;
+        width: 100%;
+        background-image: url(../image/title_main.png);
+        background-size: auto 20px;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    
+    header .right {
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        width: 60px;
+        height: 50px;
+    }
+    
+    header .right .member-center {
+        position: absolute;
+        top: 13px;
+        right: 12px;
+        width: 24px;
+        height: 24px;
+        background-image: url(../image/membercenter.png);
+        background-size: auto 24px;
+        background-position: center center;
+    }
+    
+    nav {
+        width: 100%;
+        height: 40px;
+        background-color: #e1017e;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-flex-flow: row;
+        flex-flow: row;
+    }
+    
+    nav .menu {
+        width: 100%;
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        flex: 1;
+        height: 40px;
+        line-height: 40px;
+        color: #ddd;
+        font-size: 13px;
+        text-align: center;
+    }
+    
+    nav .selected {
+        font-weight: bolder;
+        color: #fff;
+        font-size: 15px;
+    }
+    
+    .active {
+        opacity: 0.7;
+    }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <div class="left" tapmode="active">
+            <div id="cityArrow" class="arrow-down"></div>
+            <div id="cityText" class="city-text">北京市</div>
+        </div>
+        <div class="title"></div>
+        <div class="right" tapmode>
+            <div class="member-center"></div>
+        </div>
+    </header>
+    <nav id="nav">
+        <div class="menu selected" tapmode="active">水果</div>
+        <div class="menu" tapmode="active">食材</div>
+        <div class="menu" tapmode="active">零食</div>
+        <div class="menu" tapmode="active">牛奶</div>
+        <div class="menu" tapmode="active">蔬菜</div>
+    </nav>
+</body>
+<script type="text/javascript" src="../script/api.js"></script>
+<script type="text/javascript">
+apiready = function() {
+
+};
+</script>
+
+</html>

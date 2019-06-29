@@ -1,0 +1,240 @@
+{
+	"id": "0ea140a8-2862-7c12-1edb-c7dc5cf66186",
+	"name": "sxo2o",
+	"description": "sxo2o service api. ",
+	"order": [
+		"920b2368-2512-60d3-1138-1dd441f183ce",
+		"4f1c7ed4-2714-d1c3-1910-ec0d9d9a2400",
+		"c566689c-e92d-795b-40fc-90a964498534",
+		"7d61dfd0-a6c4-e197-b3c2-26bf764dee98",
+		"4b61179d-4902-bb55-2f6e-9dc4dc69593b",
+		"346a0a5a-88e2-a6b5-14b4-91f00c75369f",
+		"94fe24c2-86af-36ee-ab27-87c889ed28d1",
+		"5e9cb1f2-a26c-9e1b-4735-3acf31d55ff0",
+		"bf5dd6de-68d0-9426-4ca2-ae484b078884"
+	],
+	"folders": [],
+	"timestamp": 1476081172812,
+	"owner": "903154",
+	"public": false,
+	"published": false,
+	"requests": [
+		{
+			"id": "346a0a5a-88e2-a6b5-14b4-91f00c75369f",
+			"headers": "X-APICloud-AppId: A6914327011091\nX-APICloud-AppKey: 8ac17d22e49cb7982d82796097cec52a6c7cd01d.1475375422841\n",
+			"url": "http://d.apicloud.com/mcm/api/ware?filter={\"where\":{\"id\":\"56c94a0426f863e874c76caf\"},\"skip\":0,\"limit\":1,\"include\": [\"wareInfoPointer\"]}",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1476083190147,
+			"name": "获取商品详情",
+			"description": "获取商品详情",
+			"collectionId": "0ea140a8-2862-7c12-1edb-c7dc5cf66186",
+			"responses": []
+		},
+		{
+			"id": "4b61179d-4902-bb55-2f6e-9dc4dc69593b",
+			"headers": "X-APICloud-AppId: A6914327011091\nX-APICloud-AppKey: 8ac17d22e49cb7982d82796097cec52a6c7cd01d.1475375422841\n",
+			"url": "http://d.apicloud.com/mcm/api/ware",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1476082875247,
+			"name": "获取商品列表",
+			"description": "获取商品列表",
+			"collectionId": "0ea140a8-2862-7c12-1edb-c7dc5cf66186",
+			"responses": []
+		},
+		{
+			"id": "4f1c7ed4-2714-d1c3-1910-ec0d9d9a2400",
+			"headers": "X-APICloud-AppId: A6914327011091\nX-APICloud-AppKey: 8ac17d22e49cb7982d82796097cec52a6c7cd01d.1475375422841\n",
+			"url": "http://d.apicloud.com/mcm/api/user/login",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "0ea140a8-2862-7c12-1edb-c7dc5cf66186",
+			"data": [
+				{
+					"key": "username",
+					"value": "broad123",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "123456",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "用户登录",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1476082084810,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "5e9cb1f2-a26c-9e1b-4735-3acf31d55ff0",
+			"headers": "X-APICloud-AppId: A6914327011091\nX-APICloud-AppKey: 8ac17d22e49cb7982d82796097cec52a6c7cd01d.1475375422841\nAuthorization: vqCqvpdsdfNnOiuIeEDhB4oZ7uAGoywzTEUfXEc2srPO8jZtYjQK4D5XlvX1CanG\n",
+			"url": "https://d.apicloud.com/mcm/api/user/57fb371781ff2abb274134be",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "PUT",
+			"data": [
+				{
+					"key": "avatar",
+					"value": "{\"url\": \"http://7y0hol.com1.z0.glb.clouddn.com/apicloud/69f4bd69a698b2fe955bd5a43392c38a.png\" }",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1476084781669,
+			"name": "更改用户头像",
+			"description": "更改用户头像",
+			"collectionId": "0ea140a8-2862-7c12-1edb-c7dc5cf66186",
+			"responses": []
+		},
+		{
+			"id": "7d61dfd0-a6c4-e197-b3c2-26bf764dee98",
+			"headers": "X-APICloud-AppId: A6914327011091\nX-APICloud-AppKey: 8ac17d22e49cb7982d82796097cec52a6c7cd01d.1475375422841\n",
+			"url": "http://d.apicloud.com/mcm/api/wareType",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "0ea140a8-2862-7c12-1edb-c7dc5cf66186",
+			"data": null,
+			"dataMode": "params",
+			"name": "获取商品分类列表",
+			"description": "获取商品分类列表",
+			"descriptionFormat": "html",
+			"time": 1476082731536,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "920b2368-2512-60d3-1138-1dd441f183ce",
+			"headers": "X-APICloud-AppId: A6914327011091\nX-APICloud-AppKey: 8ac17d22e49cb7982d82796097cec52a6c7cd01d.1475375422841\n",
+			"url": "https://d.apicloud.com/mcm/api/user",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "0ea140a8-2862-7c12-1edb-c7dc5cf66186",
+			"data": [
+				{
+					"key": "username",
+					"value": "broad123",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "123456",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "用户注册",
+			"description": "用户注册",
+			"descriptionFormat": "html",
+			"time": 1476081787803,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "94fe24c2-86af-36ee-ab27-87c889ed28d1",
+			"headers": "X-APICloud-AppId: A6914327011091\nX-APICloud-AppKey: 8ac17d22e49cb7982d82796097cec52a6c7cd01d.1475375422841\n",
+			"url": "https://d.apicloud.com/mcm/api/file",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "filename",
+					"value": "icon",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "file",
+					"value": "icon28x28.png",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1476083378937,
+			"name": "上传文件",
+			"description": "上传文件",
+			"collectionId": "0ea140a8-2862-7c12-1edb-c7dc5cf66186",
+			"responses": []
+		},
+		{
+			"id": "bf5dd6de-68d0-9426-4ca2-ae484b078884",
+			"headers": "X-APICloud-AppId: A6914327011091\nX-APICloud-AppKey: 8ac17d22e49cb7982d82796097cec52a6c7cd01d.1475375422841\nAuthorization: vqCqvpdsdfNnOiuIeEDhB4oZ7uAGoywzTEUfXEc2srPO8jZtYjQK4D5XlvX1CanG\n",
+			"url": "https://d.apicloud.com/mcm/api/user/57fb371781ff2abb274134be",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1476084940846,
+			"name": "获取用户信息",
+			"description": "获取用户信息",
+			"collectionId": "0ea140a8-2862-7c12-1edb-c7dc5cf66186",
+			"responses": []
+		},
+		{
+			"id": "c566689c-e92d-795b-40fc-90a964498534",
+			"headers": "X-APICloud-AppId: A6914327011091\nX-APICloud-AppKey: 8ac17d22e49cb7982d82796097cec52a6c7cd01d.1475375422841\n",
+			"url": "http://d.apicloud.com/mcm/api/supportArea?filter={\"where\":{},\"skip\":0,\"limit\":50}",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1476082587696,
+			"name": "获取支持地区列表",
+			"description": "",
+			"collectionId": "0ea140a8-2862-7c12-1edb-c7dc5cf66186",
+			"responses": []
+		}
+	]
+}

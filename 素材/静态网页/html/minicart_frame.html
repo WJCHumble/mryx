@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>mini购物车</title>
+    <link rel="stylesheet" type="text/css" href="../css/api.css" />
+    <style>
+    html,
+    body {
+        height: 100%;
+        background-color: transparent;
+    }
+    
+    section {
+        display: inline-block;
+        box-sizing: border-box;
+        padding: 4px;
+        width: auto;
+        height: 33px;
+        min-width: 35px;
+        line-height: 25px;
+        color: #fff;
+        font-size: 12px;
+        background-image: url(../image/minicart.png);
+        background-repeat: no-repeat;
+        background-size: auto 33px;
+        background-position: right center;
+    }
+    
+    .count {
+        display: none;
+        box-sizing: border-box;
+        padding-left: 4px;
+        padding-right: 4px;
+        width: auto;
+        min-width: 25px;
+        height: 25px;
+        border-radius: 13px;
+        background-color: #fff;
+        text-align: center;
+        color: #e3007f;
+    }
+    </style>
+</head>
+
+<body>
+    <section>
+        <span class="prefix">￥</span>
+        <span id="amount" class="amount">0</span>
+        <span id="count" class="count"></span>
+    </section>
+</body>
+<script type="text/javascript" src="../script/api.js"></script>
+<script type="text/javascript">
+apiready = function() {
+
+};
+</script>
+
+</html>

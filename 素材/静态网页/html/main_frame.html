@@ -1,0 +1,264 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>首页Frame</title>
+    <link rel="stylesheet" type="text/css" href="../css/api.css" />
+    <style type="text/css">
+    header {
+        width: 100%;
+        height: 130px;
+        box-sizing: border-box;
+        padding: 4px 10px;
+    }
+    
+    header .banner {
+        width: 100%;
+        height: 100%;
+    }
+    
+    section {
+        position: relative;
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        padding: 0 8px;
+    }
+    
+    .ware-0 {
+        position: relative;
+        width: 100%;
+        height: 177px;
+        box-sizing: border-box;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+    
+    .content {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .ware-0 .thumbnail {
+        height: 130px;
+        width: 100%;
+    }
+    
+    .ware-0 .info {
+        width: 100%;
+        box-sizing: border-box;
+        height: 35px;
+        line-height: 35px;
+        padding-left: 6px;
+        border-bottom: 1px solid #d1d1d1;
+    }
+    
+    .ware-0 .info .price {
+        font-size: 14px;
+        color: #e3007f;
+    }
+    
+    .ware-0 .info .unit {
+        font-size: 13px;
+        color: #767676;
+    }
+    
+    .ware-0 .info .origin-price {
+        font-size: 11px;
+        color: #c0c0c0;
+    }
+    
+    .ware-1 {
+        position: relative;
+        width: 100%;
+        height: 145px;
+        box-sizing: border-box;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #d1d1d1;
+    }
+    
+    .ware-1 .thumbnail {
+        position: absolute;
+        top: 20px;
+        left: 0px;
+        height: 100px;
+        width: 100px;
+    }
+    
+    .ware-1 .info {
+        width: 100%;
+        height: 114px;
+        box-sizing: border-box;
+        padding-left: 112px;
+        padding-right: 28px;
+    }
+    
+    .ware-1 .info .name {
+        width: 100%;
+        height: 15px;
+        color: #555555;
+        margin-top: 14px;
+        font-size: 15px;
+    }
+    
+    .ware-1 .info .description {
+        margin-top: 10px;
+        width: 100%;
+        height: 13px;
+        font-size: 13px;
+        color: #9d9d9d;
+    }
+    
+    .ware-1 .info .price-tag {
+        margin-top: 10px;
+        width: 100%;
+        height: 12px;
+        font-size: 12px;
+        vertical-align: top;
+    }
+    
+    .ware-1 .info .price-tag .price {
+        color: #e3007f;
+    }
+    
+    .ware-1 .info .price-tag .unit {
+        font-size: 8px;
+        color: #cbcbcb;
+    }
+    
+    .ware-1 .info .origin-price {
+        margin-top: 5px;
+        width: 100%;
+        height: 10px;
+        font-size: 10px;
+        color: #d3d3d3;
+    }
+    
+    .ware .control {
+        position: absolute;
+        width: 110px;
+        height: 23px;
+        right: 8px;
+    }
+    
+    .ware-0 .control {
+        bottom: 8px;
+    }
+    
+    .ware-1 .control {
+        top: 90px;
+    }
+    
+    .ware .control .panel {
+        display: none;
+        height: 23px;
+    }
+    
+    .ware .control .minus {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 23px;
+        height: 23px;
+    }
+    
+    .ware .control .count {
+        position: relative;
+        top: 0;
+        margin-left: 31px;
+        margin-right: 31px;
+        width: auto;
+        height: 23px;
+        text-align: center;
+        line-height: 23px;
+        color: #444;
+        font-size: 12px;
+        background-image: url(../image/count.png);
+        background-repeat: no-repeat;
+        background-size: 48px 23px;
+    }
+    
+    .ware .control .add {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 23px;
+        height: 23px;
+    }
+    
+    .push-status {
+        width: 100%;
+        height: 40px;
+        font-size: 16px;
+        color: #888;
+        line-height: 40px;
+        text-align: center;
+        background-color: #fff;
+    }
+    
+    .active {
+        opacity: 0.7;
+    }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <img id="banner" class="banner" src="../image/default_rect.png">
+    </header>
+    <section id="list">
+        <div class="ware ware-0">
+            <div class="content">
+                <img class="thumbnail" src="../image/default_rect.png">
+                <div class="info">
+                    <span class="price">RMB14.9</span>
+                    <span class="unit">/4盒</span>
+                    <span class="origin-price">&nbsp;超市:<del>19.9元</del></span>
+                </div>
+                <div class="control">
+                    <div class="panel">
+                        <img class="minus" src="../image/minus.png">
+                        <div class="count">0</div>
+                    </div>
+                    <img class="add" src="../image/add.png">
+                </div>
+            </div>
+        </div>
+        <div class="ware ware-1">
+            <div class="content">
+                <img class="thumbnail" src="../image/default_square.png">
+                <div class="info">
+                    <div class="name">牛奶巧克力</div>
+                    <div class="description">下雨天更配哦</div>
+                    <div class="price-tag">
+                        <span class="price">￥28.9</span>
+                        <span class="unit">/1盒</span>
+                    </div>
+                    <div class="origin-price">超市:
+                        <del>59.9元</del>
+                    </div>
+                </div>
+                <div class="control">
+                    <div class="panel">
+                        <img class="minus" src="../image/minus.png">
+                        <div class="count">0</div>
+                    </div>
+                    <img class="add" src="../image/add.png ">
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="push-status" id="pushStatus">上拉显示更多</div>
+</body>
+<script type="text/javascript" src="../script/api.js"></script>
+<script type="text/javascript">
+apiready = function() {
+
+};
+</script>
+
+</html>

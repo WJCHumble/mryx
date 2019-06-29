@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>城市选择Frame</title>
+    <link rel="stylesheet" type="text/css" href="../css/api.css" />
+    <style>
+    html,
+    body {
+        height: 100%;
+        background-color: rgba(0,0,0,0.7);
+    }
+    
+    header {
+        width: 100%;
+        height: 96px;
+    }
+    
+    header .title {
+        box-sizing: border-box;
+        width: auto;
+        height: 96px;
+        margin: 0 32px;
+        padding-top: 64px;
+        padding-bottom: 16px;
+        border-bottom: 2px solid #c8026f;
+        color: #fff;
+        font-size: 14px;
+        text-align: center;
+    }
+    
+    section {
+        width: 100%;
+        height: auto;
+    }
+    
+    .city {
+        width: 100%;
+        height: 55px;
+        line-height: 55px;
+        text-align: center;
+        font-size: 22px;
+        color: #fff;
+    }
+    
+    .highlight {
+        opacity: 0.7;
+    }
+
+    .btn-back {
+        padding: 6px;
+    }
+
+    .btn-back img{
+        width: 14px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="btn-back"><img src="../image/back.png" alt=""></div>
+    <header>
+        <div class="title">选择所需服务的地区</div>
+    </header>
+    <section id="list">
+        <div class="city">北京</div>
+        <div class="city">天津</div>
+        <div class="city">西安</div>
+        <div class="city">杭州</div>
+        <div class="city">福州</div>
+        <div class="city">厦门</div>
+        <div class="city">嘉兴</div>
+        <div class="city">深圳</div>
+        <div class="city">上海</div>
+        <div class="city">成都</div>
+    </section>
+</body>
+<script type="text/javascript" src="../script/api.js"></script>
+<script type="text/javascript">
+apiready = function() {
+
+};
+</script>
+
+</html>

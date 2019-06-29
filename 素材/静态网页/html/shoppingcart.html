@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>购物车</title>
+    <link rel="stylesheet" type="text/css" href="../css/api.css" />
+    <style>
+    html,
+    body {
+        height: 100%;
+    }
+
+    body {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-flex-flow: column;
+        flex-flow: column;
+    }
+    
+    header {
+        width: 100%;
+        height: 50px;
+        background-color: #e3007f
+    }
+    
+    header .back {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 50px;
+        height: 50px;
+        background: url(../image/back.png);
+        background-position: 12px 16px;
+        background-size: 11px 18px;
+        background-repeat: no-repeat;
+    }
+    
+    header h1 {
+        width: 100%;
+        height: 50px;
+        text-align: center;
+        color: #fff;
+        font-size: 20px;
+        line-height: 50px;
+    }
+    
+    section {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        flex: 1;
+    }
+    
+    footer {
+        width: 100%;
+        height: 50px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-flex-flow: row;
+        flex-flow: row;
+        background-color: #fff;
+        border-top: 1px solid #d1d1d1;
+    }
+    
+    .control {
+        position: relative;
+        width: 100px;
+        height: 50px;
+    }
+    
+    .control .select {
+        position: absolute;
+        top: 17px;
+        left: 8px;
+        width: 16px;
+        height: 16px;
+        background-repeat: no-repeat;
+        background-image: url(../image/select_on.png);
+        background-size: 100% 100%;
+        background-position: center center;
+    }
+    
+    .control .select-off {
+        background-image: url(../image/select_off.png);
+    }
+    
+    .control .info {
+        box-sizing: border-box;
+        width: 100%;
+        height: 50px;
+        padding-left: 32px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+    
+    .control .info .top {
+        height: 20px;
+        font-size: 14px;
+        color: #444;
+        text-align: left;
+        line-height: 20px;
+    }
+    
+    .control .info .bottom {
+        height: 14px;
+        font-size: 10px;
+        color: #888;
+        text-align: left;
+        line-height: 14px;
+    }
+    
+    .panel {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        flex: 1;
+        height: 50px;
+    }
+    
+    .panel .info {
+        box-sizing: border-box;
+        width: 100%;
+        height: 50px;
+        padding-top: 8px;
+        padding-right: 8px;
+    }
+    
+    .panel .info .top {
+        position: relative;
+        width: 100%;
+        height: 20px;
+        text-align: right;
+        font-size: 16px;
+        color: #444;
+        line-height: 20px;
+    }
+    
+    .panel .info .top .amount {
+        font-weight: bold;
+        color: #e3007f;
+    }
+    
+    .panel .info .bottom {
+        position: relative;
+        height: 14px;
+        font-size: 10px;
+        color: #888;
+        text-align: right;
+        line-height: 14px;
+    }
+    
+    .buy {
+        width: 112px;
+        height: 50px;
+    }
+    
+    .buy .buy-button {
+        width: 112px;
+        height: 40px;
+        margin-top: 5px;
+    }
+    
+    .highlight {
+        opacity: 0.7;
+    }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <div class="back"></div>
+        <h1>购物车</h1>
+    </header>
+    <section></section>
+    <footer id="footer">
+        <div class="control">
+            <div id="select" class="select"></div>
+            <div class="info">
+                <div class="top">全选</div>
+                <div class="bottom">已选<span id="count" class="count">0</span>件</div>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="info">
+                <div class="top">总金额:<span id="amount" class="amount">￥0</span></div>
+                <div class="bottom">不含运费</div>
+            </div>
+        </div>
+        <div class="buy">
+            <img class="buy-button" src="../image/buy.png">
+        </div>
+    </footer>
+</body>
+<script type="text/javascript" src="../script/api.js"></script>
+<script type="text/javascript">
+apiready = function() {
+};
+</script>
+
+</html>

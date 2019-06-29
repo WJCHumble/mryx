@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>客服Frame</title>
+    <link rel="stylesheet" type="text/css" href="../css/api.css" />
+    <style>
+    html,
+    body {
+        background-color: #fdf3cf;
+    }
+    
+    section {
+        position: relative;
+        height: auto;
+    }
+    
+    section .item {
+        position: relative;
+        width: auto;
+        height: auto;
+        margin: 16px;
+    }
+    
+    section .item .icon {
+        position: absolute;
+        top: 0;
+        width: 40px;
+        min-height: 40px;
+        height: 100%;
+        background-size: 40px 40px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        border-radius: 20px;
+    }
+    
+    section .question .icon {
+        left: 0;
+        background-image: url(../image/user.png);
+    }
+    
+    section .answer .icon {
+        right: 0;
+        background-image: url(../image/missfresh.png)
+    }
+    
+    section .item .content {
+        position: relative;
+        box-sizing: border-box;
+        width: 100%;
+        height: auto;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    
+    section .item .arrow {
+        position: absolute;
+        top: 50%;
+        margin-top: -5px;
+        width: 0;
+        height: 0px;
+    }
+    
+    section .question .arrow {
+        left: 48px;
+        border-top: 5px solid;
+        border-bottom: 5px solid;
+        border-right: 20px solid;
+        border-color: transparent #fff transparent transparent;
+    }
+    
+    section .answer .arrow {
+        right: 48px;
+        border-top: 5px solid;
+        border-bottom: 5px solid;
+        border-left: 20px solid;
+        border-color: transparent transparent transparent #ffa5d8;
+    }
+    
+    section .item .text {
+        position: relative;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 8px;
+        height: auto;
+        min-height: 40px;
+        font-size: 14px;
+        text-align: left;
+        line-height: 24px;
+        border-radius: 8px;
+    }
+    
+    section .question .text {
+        background-color: #fff;
+    }
+    
+    section .answer .text {
+        background-color: #ffa5d8;
+    }
+    
+    footer {
+        position: relative;
+        width: 100%;
+        height: 50px;
+        text-align: center;
+        background-color: #e3007f;
+    }
+    
+    footer .row {
+        position: relative;
+        top: 11px;
+        width: 220px;
+        height: 28px;
+        margin: 0 auto;
+        background-color: #fdf3cf;
+        background-image: url(../image/service_footer.png);
+        background-repeat: no-repeat;
+        background-size: auto 22px;
+        background-position: center center;
+        border-radius: 14px;
+    }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="item question">
+            <div class="icon"></div>
+            <div class="content">
+                <div class="arrow"></div>
+                <div class="text">收到货后，发现产品存在问题如何处理？</div>
+            </div>
+        </div>
+        <div class="item answer">
+            <div class="icon"></div>
+            <div class="content">
+                <div class="arrow"></div>
+                <div class="text">亲，收到快递时请当面验收，如产品存在品质问题请尽快联系在线客服（收货24小时内），并拍照上传，我们会竭尽全力为您解决问题。</div>
+            </div>
+        </div>
+        <div class="item question">
+            <div class="icon"></div>
+            <div class="content">
+                <div class="arrow"></div>
+                <div class="text">使用什么快递送货？</div>
+            </div>
+        </div>
+        <div class="item answer">
+            <div class="icon"></div>
+            <div class="content">
+                <div class="arrow"></div>
+                <div class="text">您好，每日优鲜是100%冷运到家的生鲜电商，现在合作的物流有京东冷运、美食达、人人和达达快递，本店所有商品均是通过冷运发货。</div>
+            </div>
+        </div>
+        <div class="item question">
+            <div class="icon"></div>
+            <div class="content">
+                <div class="arrow"></div>
+                <div class="text">我所在的城市支持送货吗？</div>
+            </div>
+        </div>
+        <div class="item answer">
+            <div class="icon"></div>
+            <div class="content">
+                <div class="arrow"></div>
+                <div class="text">本店首期已覆盖北京全市，天津，深圳，广州和河北部分城市，其他城市陆续开通中……</div>
+            </div>
+        </div>
+        <div class="item question">
+            <div class="icon"></div>
+            <div class="content">
+                <div class="arrow"></div>
+                <div class="text">请问我选的这款产品有货吗？</div>
+            </div>
+        </div>
+        <div class="item answer">
+            <div class="icon"></div>
+            <div class="content">
+                <div class="arrow"></div>
+                <div class="text">您好，店铺内所有在架商品都是现货，欢迎您选购！</div>
+            </div>
+        </div>
+        <div class="item question">
+            <div class="icon"></div>
+            <div class="content">
+                <div class="arrow"></div>
+                <div class="text">客服上班时间是几点，节假日也有客服吗？</div>
+            </div>
+        </div>
+        <div class="item answer">
+            <div class="icon"></div>
+            <div class="content">
+                <div class="arrow"></div>
+                <div class="text">您好，客服在线时间是每日9点-晚22点（包括周末），节假日客服不定时在线，有任何问题请您留言，客服看到会第一时间为您处理问题。</div>
+            </div>
+        </div>
+        <div class="item question">
+            <div class="icon"></div>
+            <div class="content">
+                <div class="arrow"></div>
+                <div class="text">没有时间收货，能修改地址或改天再送吗？</div>
+            </div>
+        </div>
+        <div class="item answer">
+            <div class="icon"></div>
+            <div class="content">
+                <div class="arrow"></div>
+                <div class="text">您好，由于本店所售产品为生鲜类商品，一旦发出，不接受更改地址或改天送货的，请侊见谅与理解。</div>
+            </div>
+        </div>
+        <div class="item question">
+            <div class="icon"></div>
+            <div class="content">
+                <div class="arrow"></div>
+                <div class="text">现在我不在收货地址，不能签收快件，我不想要了可以退款吗？</div>
+            </div>
+        </div>
+        <div class="item answer">
+            <div class="icon"></div>
+            <div class="content">
+                <div class="arrow"></div>
+                <div class="text">您好，根据国家相关法律，本店所售产品为生鲜类商品，不支持7天无理由退换货。请您尊重我们的劳动成果，如国顾客本人不在收货地址，不方便签收，不想要了，家中无人等收件人个人原因造成的退换货均不予退换，谢谢您的配合。</div>
+            </div>
+        </div>
+        <div class="item question">
+            <div class="icon"></div>
+            <div class="content">
+                <div class="arrow"></div>
+                <div class="text">美食送物流超区，但之前我所在地区是可以收到快递的。</div>
+            </div>
+        </div>
+        <div class="item answer">
+            <div class="icon"></div>
+            <div class="content">
+                <div class="arrow"></div>
+                <div class="text">您好，您所在的地区美食送物流是系统自动导航地址，没有人工确认操作。可能会定位出错导致超出快递的派送范围。请您联系在线客服给您整单退款。优惠卷可以第一时间返还给您。请您重新下单后第一时间联系在线客服改为京东快递配送，给您带来的不便还望见谅。</div>
+            </div>
+        </div>
+        <div class="item question">
+            <div class="icon"></div>
+            <div class="content">
+                <div class="arrow"></div>
+                <div class="text">团购返现没有及时到帐是什么原因？</div>
+            </div>
+        </div>
+        <div class="item answer">
+            <div class="icon"></div>
+            <div class="content">
+                <div class="arrow"></div>
+                <div class="text">您好，团购返现是系统自动返现的，如果您没有收到返现通知，请联系在线客服帮您查询。如果没有返现记录我们会帮您手动返现，退款返现是原路返回到您的支付账户中的，到帐时间为7个工作日内，请您注意查收。</div>
+            </div>
+        </div>
+        <div class="item question">
+            <div class="icon"></div>
+            <div class="content">
+                <div class="arrow"></div>
+                <div class="text">谁都允在参加团购时，我作为团长想要和朋友一起团，但总是有人挤进来。于是朋友就无法加入我的团购。</div>
+            </div>
+        </div>
+        <div class="item answer">
+            <div class="icon"></div>
+            <div class="content">
+                <div class="arrow"></div>
+                <div class="text">您好，您发起的团购在附近的团购中是可以被他人看到并参与的，付款成功后库房会按照订单顺序照常发货，满团后系统会自动返现的。</div>
+            </div>
+        </div>
+        <div class="item question">
+            <div class="icon"></div>
+            <div class="content">
+                <div class="arrow"></div>
+                <div class="text">订单错发如何解决？</div>
+            </div>
+        </div>
+        <div class="item answer">
+            <div class="icon"></div>
+            <div class="content">
+                <div class="arrow"></div>
+                <div class="text">您好，订单错发可拍照截图并上传给在线客服，在线客服会立即为您处理并进行退款。</div>
+            </div>
+        </div>
+        <div class="item question">
+            <div class="icon"></div>
+            <div class="content">
+                <div class="arrow"></div>
+                <div class="text">为什么系统无法支付？</div>
+            </div>
+        </div>
+        <div class="item answer">
+            <div class="icon"></div>
+            <div class="content">
+                <div class="arrow"></div>
+                <div class="text">您好，您可以先截图提示无法支付的页面给在线客服，以便我们确定具体原因，并第一时间给您处理。</div>
+            </div>
+        </div>
+        <div class="item question">
+            <div class="icon"></div>
+            <div class="content">
+                <div class="arrow"></div>
+                <div class="text">为什么原地址更改保存不上呢？</div>
+            </div>
+        </div>
+        <div class="item answer">
+            <div class="icon"></div>
+            <div class="content">
+                <div class="arrow"></div>
+                <div class="text">您好，实在抱歉，您试试重新编辑一下地址（右上角有添加地址的标识）。现在系统升级，添加了定位功能，可以更加准确及时的送货上门，所以需要亲手动删除原有地址后重新添加新的地址，更加便捷的体会生鲜美味。</div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="row"></div>
+    </footer>
+</body>
+
+</html>

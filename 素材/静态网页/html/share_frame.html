@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>分享Frame</title>
+    <link rel="stylesheet" type="text/css" href="../css/api.css" />
+    <style>
+    html,
+    body {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-flex-flow: column;
+        flex-flow: column;
+        height: 100%;
+        background-color: transparent;
+    }
+    
+    section {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        flex: 1;
+    }
+    
+    footer {
+        width: 100%;
+        height: 100px;
+        background-color: #fff;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+    }
+    
+    .col {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        flex: 1;
+        text-align: center;
+        height: 100px;
+    }
+    
+    .col img {
+        width: 50px;
+        margin-top: 20px;
+    }
+    
+    .col p {
+        margin-top: 3px;
+        color: #7d7d7d;
+        font-size: 14px;
+    }
+    
+    .highlight {
+        opacity: 0.7;
+    }
+    </style>
+</head>
+
+<body>
+    <section></section>
+    <footer>
+        <div id="footer_span1" class="col">
+            <img src="../image/share_timeline.png" />
+            <p>微信朋友圈</p>
+        </div>
+        <div id="footer_span2" class="col">
+            <img src="../image/share_friend.png" />
+            <p>微信好友</p>
+        </div>
+    </footer>
+</body>
+<script type="text/javascript" src="../script/api.js"></script>
+<script type="text/javascript">
+apiready = function() {
+};
+
+</script>
+
+</html>

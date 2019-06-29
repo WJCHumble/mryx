@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>title</title>
+    <link rel="stylesheet" type="text/css" href="../css/api.css" />
+    <style>
+    html,
+    body {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-flex-flow: column;
+        flex-flow: column;
+        height: 100%;
+    }
+    
+    header {
+        width: 100%;
+        height: 50px;
+        background-color: #e3007f
+    }
+    
+    header .back {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 50px;
+        height: 50px;
+        background: url(../image/back.png);
+        background-position: 12px 16px;
+        background-size: 11px 18px;
+        background-repeat: no-repeat;
+    }
+    
+    section {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        flex: 1;
+    }
+    
+    footer {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-flex-flow: row;
+        flex-flow: row;
+        width: 100%;
+        height: 50px;
+    }
+    
+    footer .item {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        flex: 1;
+        width: 100%;
+        height: 50px;
+    }
+    
+    footer .item-service {
+        text-align: right;
+    }
+    
+    footer .item .button {
+        display: inline-block;
+        width: auto;
+        height: 50px;
+        box-sizing: border-box;
+        line-height: 50px;
+        text-align: left;
+        font-size: 16px;
+        background-size: auto 16px;
+        background-position: 16px center;
+        background-repeat: no-repeat;
+    }
+    
+    .setting {
+        padding-left: 34px;
+        background-image: url(../image/user_setting.png);
+    }
+    
+    .message {
+        padding-left: 44px;
+        background-image: url(../image/icon_user_messages.png);
+    }
+    
+    .service {
+        padding-left: 34px;
+        padding-right: 16px;
+        background-image: url(../image/user_call.png);
+    }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <div class="back"></div>
+    </header>
+    <section></section>
+    <footer id="footer">
+        <div class="item">
+            <div class="button setting">设置</div>
+        </div>
+        <div class="item">
+            <div class="button message">消息</div>
+        </div>
+        <div class="item"></div>
+        <div class="item item-service">
+            <div class="button service">客服</div>
+        </div>
+    </footer>
+</body>
+<script type="text/javascript" src="../script/api.js"></script>
+<script type="text/javascript">
+apiready = function() {
+
+};
+</script>
+
+</html>

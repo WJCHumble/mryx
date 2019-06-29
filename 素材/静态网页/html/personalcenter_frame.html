@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>个人中心Frame</title>
+    <link rel="stylesheet" type="text/css" href="../css/api.css" />
+    <style>    
+    header {
+        height: 150px;
+        padding-top: 8px;
+        background-color: #e3007f;
+    }
+    
+    header .icon-panel {
+        width: 100%;
+        height: 86px;
+        text-align: center;
+    }
+    
+    header .icon-panel .icon {
+        display: inline-block;
+        box-sizing: border-box;
+        width: 86px;
+        height: 86px;
+        border: 3px solid #b10063;
+        border-radius: 86px;
+        background-repeat: no-repeat;
+        background-image: url(../image/default_square.png);
+        background-size: 100% 100%;
+        background-position: center center;
+    }
+    
+    header .username {
+        height: 30px;
+        line-height: 30px;
+        font-size: 14px;
+        color: #fff;
+        text-align: center;
+    }
+    
+    header .account-info {
+        height: 30px;
+        line-height: 30px;
+        font-size: 12px;
+        color: #fff;
+        text-align: center;
+    }
+    
+    .option {
+        position: relative;
+        box-sizing: border-box;
+        width: 100%;
+        height: 61px;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    .option .icon {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 40px;
+        height: 60px;
+        background-repeat: no-repeat;
+        background-position: 12px center;
+        background-size: auto 20px;
+    }
+    
+    .option .icon-myorder {
+        background-image: url(../image/img_item_myorder.png);
+    }
+    
+    .option .icon-account {
+        background-image: url(../image/icon_user_info_accounts.png);
+    }
+    
+    .option .icon-coupon {
+        background-image: url(../image/icon_user_coupon.png);
+        background-position: 8px center;
+    }
+    
+    .option .icon-address {
+        background-image: url(../image/item_user_address.png);
+    }
+    
+    .option .title {
+        position: relative;
+        box-sizing: border-box;
+        width: 100%;
+        height: 60px;
+        padding-left: 40px;
+        font-size: 14px;
+        color: #444;
+        text-align: left;
+        line-height: 60px;
+    }
+    
+    .option .arrow-panel {
+        position: absolute;
+        top: 0;
+        right: 12px;
+        width: auto;
+        height: 60px;
+        background-image: url(../image/arrow_right.png);
+        background-repeat: no-repeat;
+        background-size: 16px 24px;
+        background-position: right center;
+    }
+    
+    .option .arrow-panel .text {
+        box-sizing: border-box;
+        padding-right: 20px;
+        width: auto;
+        height: 60px;
+        line-height: 60px;
+        font-size: 13px;
+        color: #888;
+        text-align: left;
+    }
+    
+    .highlight {
+        opacity: 0.7;
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="icon-panel">
+            <div id="icon" class="icon"></div>
+        </div>
+        <div id="username" class="username">broad</div>
+        <div class="account-info">积分：0|余额：￥0</div>
+    </header>
+    <section>
+        <div class="option">
+            <div class="icon icon-myorder"></div>
+            <div class="title">我的订单</div>
+            <div class="arrow-panel">
+                <div class="text">查看所有订单详情</div>
+            </div>
+        </div>
+        <div class="option">
+            <div class="icon icon-account"></div>
+            <div class="title">我的账户</div>
+            <div class="arrow-panel">
+                <div class="text">充值有礼</div>
+            </div>
+        </div>
+        <div class="option">
+            <div class="icon icon-coupon"></div>
+            <div class="title">优惠卷</div>
+            <div class="arrow-panel">
+                <div class="text">查看我的优惠卷</div>
+            </div>
+        </div>
+        <div class="option">
+            <div class="icon icon-address"></div>
+            <div class="title">收货地址</div>
+            <div class="arrow-panel">
+                <div class="text">管理我的收货地址</div>
+            </div>
+        </div>
+    </section>
+</body>
+<script type="text/javascript" src="../script/api.js"></script>
+<script type="text/javascript">
+apiready = function() {
+
+};
+</script>
+
+</html>

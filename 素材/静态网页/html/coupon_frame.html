@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>优惠券Frame</title>
+    <link rel="stylesheet" type="text/css" href="../css/api.css" />
+    <style>
+    html {
+        height: 100%;
+    }
+    
+    body {
+        min-height: 100%;
+        background-color: #f0f0f0;
+    }
+    
+    section {
+        position: relative;
+        box-sizing: border-box;
+        padding: 8px 16px;
+        width: 722px;
+        height: auto;
+        transform-origin: left top;
+        -webkit-transform-origin: left top;
+    }
+    
+    section .coupon {
+        position: relative;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        width: 690px;
+        height: 190px;
+        background-image: url(../image/coupon_background.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 690px 190px;
+    }
+    
+    section .coupon .title {
+        position: absolute;
+        width: 80px;
+        height: 20px;
+        top: 55px;
+        left: 32px;
+        font-size: 24px;
+        text-align: center;
+        color: #e3007f;
+        line-height: 20px;
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        transform-origin: left top;
+        -webkit-transform-origin: left top;
+    }
+    
+    section .coupon .price {
+        position: absolute;
+        box-sizing: border-box;
+        width: 226px;
+        height: 190px;
+        left: 44px;
+        padding-top: 55px;
+        font-size: 80px;
+        color: #fff;
+        font-weight: bolder;
+        text-align: center;
+    }
+    
+    section .coupon .price sup {
+        display: inline;
+        font-size: 40px;
+    }
+    
+    section .coupon .info {
+        position: absolute;
+        box-sizing: border-box;
+        padding-left: 16px;
+        width: 396px;
+        height: 190px;
+        right: 0;
+        color: #fff;
+    }
+    
+    section .coupon .info .top {
+        position: relative;
+        margin-top: 30px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 32px;
+        font-weight: bolder;
+    }
+    
+    section .coupon .info .middle {
+        position: relative;
+        margin-top: 4px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 30px;
+    }
+    
+    section .coupon .info .bottom {
+        position: relative;
+        margin-top: 16px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 24px;
+    }
+    </style>
+</head>
+
+<body>
+    <section id="list">
+        <div class="coupon">
+            <div class="title">优惠卷</div>
+            <div class="price">50.0<sup>￥</sup></div>
+            <div class="info">
+                <div class="top">APP新客户50元体验卷</div>
+                <div class="middle">满99元使用（含运费）</div>
+                <div class="bottom">有效期至2016年10月1日</div>
+            </div>
+        </div>
+        <div class="coupon">
+            <div class="title">优惠卷</div>
+            <div class="price">30.0<sup>￥</sup></div>
+            <div class="info">
+                <div class="top">APP新客户30元体验卷</div>
+                <div class="middle">满99元使用（含运费）</div>
+                <div class="bottom">有效期至2016年10月1日</div>
+            </div>
+        </div>
+    </section>
+</body>
+<script type="text/javascript" src="../script/api.js"></script>
+<script type="text/javascript">
+apiready = function() {
+    fnInit();
+};
+
+var list;
+
+function fnInit() {
+    list = $api.byId('list');
+    list.style.WebkitTransform = 'scale(' + api.winWidth / 722 + ')';
+};
+</script>
+
+</html>
