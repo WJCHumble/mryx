@@ -1,12 +1,13 @@
 ##### 项目描述：一个基于优鲜食物的移动端购物网站（大部分功能模块已实现，适合有一定Vue基础的人学习）
 ##### 技术栈：Vue CLI+Vue Router+Vuex+Less+Mint UI+axios+Swiper+Animate+Better Scroll+Mock+Vue Touch
 ### 项目展示(此处只列举部分)
-![在这里插入图片描述](https://img-blog.csdnimg.cn/2019062915431443.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQyMDQ5NDQ1,size_16,color_FFFFFF,t_70)
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20190629154417256.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQyMDQ5NDQ1,size_16,color_FFFFFF,t_70)
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20190629154517729.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQyMDQ5NDQ1,size_16,color_FFFFFF,t_70)
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20190629154600756.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQyMDQ5NDQ1,size_16,color_FFFFFF,t_70)
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20190629154637568.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQyMDQ5NDQ1,size_16,color_FFFFFF,t_70)
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20190629154710992.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQyMDQ5NDQ1,size_16,color_FFFFFF,t_70)
+<img src="https://img-blog.csdnimg.cn/20190629154710992.png" width = "100" height = "100" div align=center />
+<img src="https://img-blog.csdnimg.cn/20190629154417256.png" width = "100" height = "100" div align=center />
+<img src="https://img-blog.csdnimg.cn/20190629154517729.png" width = "100" height = "100" div align=center />
+<img src="https://img-blog.csdnimg.cn/20190629154600756.png" width = "100" height = "100" div align=center />
+<img src="https://img-blog.csdnimg.cn/20190629154637568.png" width = "100" height = "100" div align=center />
+<img src="https://img-blog.csdnimg.cn/20190629154710992.png" width = "100" height = "100" div align=center />
+
 ### 基本使用
 #### 使用less
 	
