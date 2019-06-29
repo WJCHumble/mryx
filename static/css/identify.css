@@ -1,0 +1,31 @@
+/*设置城市选择的背景*/
+.city-bgcover {
+    width: 100%;
+    height: 100%;
+}
+.mint-field-core {
+	font-size: 14px;
+}
+.mint-cell-allow-right::after {
+    border: solid 3px #E1017E;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    content: " ";
+    top: 50%;
+    right: 20px;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    -webkit-transform: translateY(-50%) rotate(45deg);
+    transform: translateY(-50%) rotate(45deg);
+}
+.mint-tab-container {
+	height: 100%;
+}
+.mint-switch-input:checked + .mint-switch-core {
+    background-color: #e1017e;
+    border-color: #e1017e;
+}
+.mint-field-core {
+    font-size: 16px;
+}
