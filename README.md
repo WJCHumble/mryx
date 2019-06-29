@@ -4,27 +4,27 @@
 
 1. 首页
 
-<img src="https://img-blog.csdnimg.cn/20190629154710992.png" width = "300" height = "500" div align=center />
+<div align=center> <img src="https://img-blog.csdnimg.cn/20190629154710992.png" width = "300" height = "500"  />
 
 2. 城市选择
 
-<img src="https://img-blog.csdnimg.cn/20190629154417256.png" width = "300" height = "500" div align=center />
+<div align=center> <img src="https://img-blog.csdnimg.cn/20190629154417256.png" width = "300" height = "500"  />
 
 3. 加入购物车
 
-<img src="https://img-blog.csdnimg.cn/20190629154517729.png" width = "300" height = "500" div align=center />
+<div align=center> <img src="https://img-blog.csdnimg.cn/20190629154517729.png" width = "300" height = "500"  />
 
 4. 商品详情
 
-<img src="https://img-blog.csdnimg.cn/20190629154600756.png" width = "300" height = "500" div align=center />
+<div align=center> <img src="https://img-blog.csdnimg.cn/20190629154600756.png" width = "300" height = "500"  />
 
 5. 个人中心
 
-<img src="https://img-blog.csdnimg.cn/20190629154637568.png" width = "300" height = "500" div align=center />
+<img src="https://img-blog.csdnimg.cn/20190629154637568.png" width = "300" height = "500"  />
 
 6. 收获地址
 
-<img src="https://img-blog.csdnimg.cn/20190629154710992.png" width = "300" height = "500" div align=center />
+<div align=center> <img src="https://img-blog.csdnimg.cn/20190629154710992.png" width = "300" height = "500"  />
 
 ### 基本使用
 #### 使用less
