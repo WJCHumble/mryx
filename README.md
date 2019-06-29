@@ -6,7 +6,7 @@
 
 1. 首页
 
-<div align=center> <img src="https://img-blog.csdnimg.cn/20190629154710992.png" width = "300" height = "500"  />
+<div align=center> <img src="https://img-blog.csdnimg.cn/20190629191039811.png" width = "300" height = "500"  />
 
 <div align=left> 2. 城市选择
 
