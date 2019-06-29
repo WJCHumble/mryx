@@ -8,15 +8,15 @@
 
 2. 城市选择
 
-<div align=center> <img src="https://img-blog.csdnimg.cn/20190629154417256.png" width = "300" height = "500"  />
+<img src="https://img-blog.csdnimg.cn/20190629154417256.png" width = "300" height = "500"  />
 
 3. 加入购物车
 
-<div align=center> <img src="https://img-blog.csdnimg.cn/20190629154517729.png" width = "300" height = "500"  />
+<img src="https://img-blog.csdnimg.cn/20190629154517729.png" width = "300" height = "500"  />
 
 4. 商品详情
 
-<div align=center> <img src="https://img-blog.csdnimg.cn/20190629154600756.png" width = "300" height = "500"  />
+<img src="https://img-blog.csdnimg.cn/20190629154600756.png" width = "300" height = "500"  />
 
 5. 个人中心
 
@@ -24,7 +24,7 @@
 
 6. 收获地址
 
-<div align=center> <img src="https://img-blog.csdnimg.cn/20190629154710992.png" width = "300" height = "500"  />
+<img src="https://img-blog.csdnimg.cn/20190629154710992.png" width = "300" height = "500"  />
 
 ### 基本使用
 #### 使用less
