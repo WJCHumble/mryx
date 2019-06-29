@@ -1,28 +1,37 @@
 ##### 项目描述：一个基于优鲜食物的移动端购物网站（大部分功能模块已实现，适合有一定Vue基础的人学习）
+
 ##### 技术栈：Vue CLI+Vue Router+Vuex+Less+Mint UI+axios+Swiper+Animate+Better Scroll+Mock+Vue Touch
+
 ### 项目展示(此处只列举部分)
 
-
+1. 首页
 
 <div align=center> <img src="https://img-blog.csdnimg.cn/20190629154710992.png" width = "300" height = "500"  />
 
+<div align=left> 2. 城市选择
 
-<img src="https://img-blog.csdnimg.cn/20190629154417256.png" width = "300" height = "500"  />
+<div align=center> <img src="https://img-blog.csdnimg.cn/20190629154417256.png" width = "300" height = "500"  />
 
+<div align=left> 3.  购物车
 
-<img src="https://img-blog.csdnimg.cn/20190629154517729.png" width = "300" height = "500"  />
+<div align=center> <img src="https://img-blog.csdnimg.cn/20190629154517729.png" width = "300" height = "500"  />
 
+<div align=left> 3.  商品详情
 
-<img src="https://img-blog.csdnimg.cn/20190629154600756.png" width = "300" height = "500"  />
+<div align=center> <img src="https://img-blog.csdnimg.cn/20190629154600756.png" width = "300" height = "500"  />
 
+<div align=left> 4.  个人中心
 
-<img src="https://img-blog.csdnimg.cn/20190629154637568.png" width = "300" height = "500"  />
+<div align=center> <img src="https://img-blog.csdnimg.cn/20190629154637568.png" width = "300" height = "500"  />
 
+<div align=left> 5. 收获地址
 
-<img src="https://img-blog.csdnimg.cn/20190629154710992.png" width = "300" height = "500"  />
+<div align=center> <img src="https://img-blog.csdnimg.cn/20190629154710992.png" width = "300" height = "500"  />
 
 <div align=left> 
+  
 ### 基本使用
+
 #### 使用less
 	
 	cnpm install less less-loader -S-D
