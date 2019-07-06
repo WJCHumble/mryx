@@ -1,8 +1,10 @@
 ### 前言
 
-##### 项目描述：一个基于优鲜食物的移动端购物网站（大部分功能模块已实现，适合有一定Vue基础的人学习，项目实施需要的资源已经放在素材文件夹下，包括接口文档、图片资源等）
+#### 项目描述
+一个基于优鲜食物的移动端购物网站（大部分功能模块已实现，适合有一定Vue基础的人学习，项目实施需要的资源已经放在素材文件夹下，包括接口文档、图片资源等）
 
-##### 技术栈：Vue CLI+Vue Router+Vuex+Less+Mint UI+axios+Swiper+Animate+Better Scroll+Mock+Vue Touch
+#### 技术栈
+Vue CLI+Vue Router+Vuex+Less+Mint UI+axios+Swiper+Animate+Better Scroll+Mock+Vue Touch
 
 ### 项目展示(此处只列举部分)
 
