@@ -10,23 +10,23 @@
 
 <div align=center> <img src="https://img-blog.csdnimg.cn/20190629191039811.png" width = "300" height = "500"  /> </ div>
 
-> 城市选择
+<div align=left> > 城市选择
 
 <div align=center> <img src="https://img-blog.csdnimg.cn/20190629154417256.png" width = "300" height = "500"  /> </ div>
 
-> 购物车
+<div align=left> > 购物车
 
 <div align=center> <img src="https://img-blog.csdnimg.cn/20190629154517729.png" width = "300" height = "500"  /> </ div>
 
-> 商品详情
+<div align=left> > 商品详情
 
 <div align=center> <img src="https://img-blog.csdnimg.cn/20190629154600756.png" width = "300" height = "500"  /> </ div>
 
-> 个人中心
+<div align=left> > 个人中心
 
 <div align=center> <img src="https://img-blog.csdnimg.cn/20190629154637568.png" width = "300" height = "500"  /> </ div>
 
-> 收获地址
+<div align=left> > 收获地址
 
 <div align=center> <img src="https://img-blog.csdnimg.cn/20190629154710992.png" width = "300" height = "500"  /> </ div>
 
