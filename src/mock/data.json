@@ -19,12 +19,12 @@
 		]
 	},
 	"ingredients": {
-		"img": [
+		"url": [
 			{
 				"url": "https://wjchumble.oss-cn-hangzhou.aliyuncs.com/20190628213313.png"
 			},
 			{
-				"url": "https://wjchumble.oss-cn-hangzhou.aliyuncs.com/20190628213313.png"
+				"url": "https://wjchumble.oss-cn-hangzhou.aliyuncs.com/20190628213355.png"
 			},
 			{
 				"url": "https://wjchumble.oss-cn-hangzhou.aliyuncs.com/20190628213416.png"
@@ -32,9 +32,12 @@
 		]
 	},
 	"snakes": {
-		"img": [
+		"url": [
 			{
 				"url": "https://wjchumble.oss-cn-hangzhou.aliyuncs.com/20190628213714.png"
+			},
+			{
+				"url": "https://wjchumble.oss-cn-hangzhou.aliyuncs.com/qkl.png"
 			},
 			{
 				"url": "https://wjchumble.oss-cn-hangzhou.aliyuncs.com/20190628213738.png"
@@ -48,7 +51,7 @@
 		]
 	},
 	"milks": {
-		"img": [
+		"url": [
 			{
 				"url": "https://wjchumble.oss-cn-hangzhou.aliyuncs.com/20190628214206.png"
 			},
@@ -64,7 +67,10 @@
 		]
 	},
 	"vegetables": {
-		"img": [
+		"url": [
+			{
+				"url": "https://wjchumble.oss-cn-hangzhou.aliyuncs.com/20190628214500.png"
+			},
 			{
 				"url": "https://wjchumble.oss-cn-hangzhou.aliyuncs.com/20190628214500.png"
 			},

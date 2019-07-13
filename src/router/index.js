@@ -64,7 +64,7 @@ export default new Router({
   		redirect: '/home'
   	},
     {
-      path: '/fooddetail/:index',
+      path: '/fooddetail/:type/:index',
       component: FoodDetail
     }
   ]

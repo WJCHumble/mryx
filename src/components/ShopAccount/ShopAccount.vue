@@ -1,12 +1,12 @@
 <template>
 	<div>
 		<footer id="footer">
-		    <div class="control" v-if="$route.path===`/fooddetail/${$route.params.index}`||$route.path==='/shopcart'">
+		    <div class="control" v-if="$route.path===`/fooddetail/${$route.params.type}/${$route.params.index}`||$route.path==='/shopcart'">
 				<slot name="control"></slot>	    	
 		    </div>
 		    <div class="panel">
 		        <div class="info">
-		            <div class="top">总金额:<span id="amount" class="amount">￥{{$route.path===`/fooddetail/${$route.params.index}`?food.totalPrice:totalPrice}}</span></div>
+		            <div class="top">总金额:<span id="amount" class="amount">￥{{$route.path===`/fooddetail/${$route.params.type}/${$route.params.index}`?food.totalPrice:totalPrice}}</span></div>
 		            <div class="bottom">不含运费</div>
 		        </div>
 		    </div>

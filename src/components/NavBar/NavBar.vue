@@ -61,20 +61,18 @@
 				fixedBoolean: true
 			}
 		},
-		// computed: {
-		// 	selectedIndex: {
-		// 		get() {
-		// 			return this.$store.state.selectedIndex
-		// 		},
-		// 		get(val) {
-		// 			return val
-		// 		}
-		// 	}
-		// },
+		computed: {
+			...mapState(['foodType'])
+		},
 		methods: {
 			updateSelectedIndex(index) {
 				this.$store.dispatch('updateSelectedIndex', index)
 				this.selectedIndex = this.$store.state.selectedIndex
+				let foodType = this.foodType[index]
+				if(this.$route.path === '/home' && !this.$store.state[foodType].length) {
+					this.$store.dispatch('getFoods', {foodIndex: index})
+					console.log(111)
+				}
 			}
 		}
 	}

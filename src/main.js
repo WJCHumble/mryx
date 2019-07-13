@@ -13,7 +13,7 @@ import {
 	Button,
 	TabContainer,
 	TabContainerItem,
-	Toast
+	Toast,
 	// MessageBox,
 } from 'mint-ui'
 import App from './App'
@@ -21,6 +21,8 @@ import router from './router'
 import store from './store'
 import VueTouch from 'vue-touch'
 import './mock/mockServer.js' //加载mockServer
+import VueLazyload from 'vue-lazyload'
+import loading from './common/imgs/default_square.png'
 
 Vue.config.productionTip = false
 //使用mint-ui注册全局组件
@@ -34,6 +36,10 @@ Vue.component(Button.name, Button)
 Vue.component(TabContainer.name, TabContainer)
 Vue.component(TabContainerItem.name, TabContainerItem)
 Vue.use(VueTouch, {name: 'v-touch'})
+Vue.use(VueLazyload, {
+	loading
+})
+
 
 Vue.prototype.$toast =  Toast
 // window.addEventListener('touchmove', { passive: false })

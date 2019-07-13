@@ -2,24 +2,28 @@
 	<div>
 		<v-touch @swipeleft="swipeLfet" @swiperight="swipeRight">
 			<mt-tab-container ref="container" v-model="selectedIndex" :swipeable="swipeable">
-			  <mt-tab-container-item ref="item" id="tab-container1">
-		  		<Food v-for="(food, index) in fruitList" :key="index" :food="food" @click.native="$router.push(`/fooddetail/${index}`)">
+			  <mt-tab-container-item v-for="(type, index_) in foodType" :id="tabContainer[index_]" :key="index_">
+		  		<Food v-for="(food, index) in $store.state[type]" :key="index" :food="food" @click.native="$router.push(`/fooddetail/${type}/${index}`)">
 		  	    </Food>
 			  </mt-tab-container-item>
-			  <mt-tab-container-item ref="item2" id="tab-container2">
-			    <mt-cell v-for="(n, index) in 5" :key="index" title="tab-container 1"></mt-cell>
+			  <!-- <mt-tab-container-item  id="tab-container2">
+				<Food v-for="(fruit, index) in fruits" :key="index" :food="fruit" @click.native="$router.push(`/fooddetail/${index}`)">
+			    </Food>
 			  </mt-tab-container-item>
 			  <mt-tab-container-item id="tab-container3">
-			    <mt-cell v-for="(n, index) in 6"  :key="index" title="tab-container 1"></mt-cell>
+				<Food v-for="(fruit, index) in fruits" :key="index" :food="fruit" @click.native="$router.push(`/fooddetail/${index}`)">
+		  	    </Food>
 			  </mt-tab-container-item>
 			  <mt-tab-container-item id="tab-container4">
-			    <mt-cell v-for="(n, index) in 7" :key="index" title="tab-container 1"></mt-cell>
+		    	<Food v-for="(fruit, index) in fruits" :key="index" :food="fruit" @click.native="$router.push(`/fooddetail/${index}`)">
+		        </Food>
 			  </mt-tab-container-item>
 			  <mt-tab-container-item id="tab-container5">
-			    <mt-cell v-for="(n, index) in 8" :key="index" title="tab-container 1"></mt-cell>
-			  </mt-tab-container-item>
+		    	<Food v-for="(fruit, index) in fruits" :key="index" :food="fruit" @click.native="$router.push(`/fooddetail/${index}`)">
+		        </Food>
+			  </mt-tab-container-item> -->
 			</mt-tab-container>
-			</v-touch>
+		</v-touch>
 	</div>
 </template>
 
@@ -32,21 +36,27 @@
 	import 'swiper/dist/css/swiper.min.css'
 	export default {
 		mounted() {
-			if(!this.fruitList[0]) {
-				this.$store.dispatch('getFruitList', this.currentCity.id)
-			}
+			if(this.fruits.length === 0) {
+				this.$store.dispatch('getFoods', {foodIndex: 0})
+			}		
 		},
 		data() {
 			return {
-				// index: 0,
 				swipeable: true,
 				currentIndex:  0,
 				swipIndex: 0,
-				// x: this.$refs.container._data.start.x
+				tabContainer: [
+					'tab-container1',
+					'tab-container2',
+					'tab-container3',
+					'tab-container4',
+					'tab-container5',
+				]
+				// foods: this.$store.state.foods[0]
 			}
 		},
 		computed: {
-			...mapState(['food', 'currentCity', 'fruitList']),
+			...mapState(['food', 'fruits', 'foodType']),
 			selectedIndex: {
 				get() {
 					return this.currentIndex = `tab-container${this.$store.state.selectedIndex + 1}`
@@ -62,19 +72,13 @@
 		},
 		methods: {
 			swipeLfet() {
-				console.log('我向右滑动了')
-				// this.$store.state.selectedIndex = 1
-				this.$store.dispatch('updateSelectedIndex', 1)
+				// this.$store.dispatch('updateSelectedIndex', 1)
 				this.$emit('v-swipeLeft')
 			},
 			swipeRight() {
 				// {swipIndex}
-				console.log('我向左滑动了')
 				this.$emit('v-swipeRight')
 			},
-			_initData() {
-				
-			}
 		}
 	}
 </script>

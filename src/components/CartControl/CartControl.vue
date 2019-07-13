@@ -2,7 +2,7 @@
 	<div>
 		<div 
 		class="control" 
-		:class="{fooddetail: $route.path===`/fooddetail/${$route.params.index}`}"
+		:class="{fooddetail: $route.path===`/fooddetail/${$route.params.type}/${$route.params.index}`}"
 		>
 		    <transition-group name=""
 			enter-active-class="animated fadeIn"

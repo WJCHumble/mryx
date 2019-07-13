@@ -98,8 +98,10 @@
 			    this.$nextTick(() => {
 			    	this._swiperInit()
 			    	this._initScroll()
+
 			    	// console.log(111)
 			    })
+			    
 		},
 		methods: {
 			toggleCitySelector() {

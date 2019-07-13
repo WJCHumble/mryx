@@ -16,14 +16,18 @@ import {
 import {
 	reqSupportArea,
 	reqFoodList,
-	reqFruitsImage
+	reqFruitsImage,
+	reqIngredientsImage,
+	reqSnakesImage,
+	reqMilksImage,
+	reqVegetablesImage
 } from '../api/index.js'
 
 //定义action
 
 export default {
 	//记录当前选中的tab下标
-	updateSelectedIndex({commit}, selectedIndex) {
+	updateSelectedIndex({commit, state}, selectedIndex) {
 		commit(UPDATE_SELECTEDINDEX, selectedIndex)
 	},	
 	//同步更新购物车
@@ -70,23 +74,90 @@ export default {
 		// console.log(result)
 		commit(GET_SUPPORTAREA, result)
 	},
-	async getFruitList({commit}, supportAreaId) {
+	//发送异步请求获取食品列表
+	async getFoods({commit, state}, {foodIndex}) {
 		let filter = {
 			fields:{},
 			where:{
-				supportAreaId: supportAreaId,
-				wareTypeId:"56c80da883af652643474b6b"
+				supportAreaId: state.currentCity.id,
+				wareTypeId:state.foodTypeId[foodIndex]
 			},
 			skip: 0,
 			limit: 5
 		}
 		filter = JSON.stringify(filter)
 		//发送跨域请求
-		const fruitList = await reqFoodList({filter})
-		const result = await reqFruitsImage()
+		
 		// console.log(result.data.url)
-		let fruitsImage = result.data.url
-		commit(GET_FOOD_LIST, {fruitList, fruitsImage})
+		let foods, result;
+		switch (foodIndex) {
+			case 0:
+				// statements_1
+				foods = await reqFoodList({filter})
+				result = await reqFruitsImage()
+				break;
+			case 1:
+				// statements_1
+				foods = await reqFoodList({filter})
+				result = await reqIngredientsImage()
+				break;
+			case 2:
+				// statements_1
+				foods = await reqFoodList({filter})
+				result = await reqSnakesImage()
+				break;
+			case 3:
+				// statements_1
+				foods = await reqFoodList({filter})
+				result = await reqMilksImage()
+				break;
+			default:
+				// statements_def
+				foods = await reqFoodList({filter})
+				result = await reqVegetablesImage()
+				break;
+		}
+		let foodsImage = result.data.url
+		// console.log(foodIndex)
+		commit(GET_FOOD_LIST, {foods, foodsImage, typeIndex: foodIndex})
 		// console.log(fruitList)
-	}
+	},
+	// //发送异步请求获取食材列表
+	// async getIngredients({commit}, supportAreaId) {
+	// 	let filter = {
+	// 		fields:{},
+	// 		where:{
+	// 			supportAreaId: supportAreaId,
+	// 			wareTypeId:"56c80db78d04c83d3d1dedea"
+	// 		},
+	// 		skip: 0,
+	// 		limit: 5
+	// 	}
+	// 	filter = JSON.stringify(filter)
+	// 	const ingredients = await reqFoodList({filter})
+	// 	// console.log(ingredients);
+	// 	const result = await reqIngredientsImage()	
+	// 	const ingredientsImage = result.data.url
+	// 	// console.log(ingredientsImage)
+	// 	commit(GET_FOOD_LIST, {foods: ingredients, foodsImage: ingredientsImage, typeIndex: 1})
+	// }
+	// //发送异步请求获取食材列表
+	// async getIngredients({commit}, supportAreaId) {
+	// 	let filter = {
+	// 		fields:{},
+	// 		where:{
+	// 			supportAreaId: supportAreaId,
+	// 			wareTypeId:"56c80db78d04c83d3d1dedea"
+	// 		},
+	// 		skip: 0,
+	// 		limit: 5
+	// 	}
+	// 	filter = JSON.stringify(filter)
+	// 	const ingredients = await reqFoodList({filter})
+	// 	// console.log(ingredients);
+	// 	const result = await reqIngredientsImage()	
+	// 	const ingredientsImage = result.data.url
+	// 	// console.log(ingredientsImage)
+	// 	commit(GET_FOOD_LIST, {foods: ingredients, foodsImage: ingredientsImage, typeIndex: 1})
+	// }
 }

@@ -9,7 +9,19 @@ export default {
 		name: "北京市",
 		updateAt: "2016-02-20T06:56:12.317Z"
 	}, //默认为北京
-	fruitList: [], //获取该地区商品列表
+	foodTypeId: [   //定义食品类别列表
+		'56c80da883af652643474b6b',
+		'56c80db78d04c83d3d1dedea',
+		'56c80dc031da9e480de1cb49',
+		'56c80dc383af652643474b6d',
+		'56c80dc88d04c83d3d1dedf3'
+	],
+	foodType: ["fruits", "ingredients", "snacks", "milks", "vegetables"],  //最终形式二维数组  0蔬菜  1食材 2零食 3牛奶 4蔬菜 
+	fruits: [], //获取该地区商品列表
+	ingredients: [], //食材
+	snacks: [], //零食
+	milks: [], //牛奶
+	vegetables: [], //蔬菜
 	totalCount: 0, //记录购物车总的物品数量
 	totalPrice: 0, //记录购物车总的价格
 	// rbtnState: 0, //管理RadioButton按钮的状态

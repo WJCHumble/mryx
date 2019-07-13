@@ -103,14 +103,21 @@ export default {
 	[GET_SUPPORTAREA](state, result) {
 		state.supportArea = result
 	},
-	[GET_FOOD_LIST](state, {fruitList, fruitsImage}) {
-		// console.log(fruitsImage)
-		fruitsImage.forEach((item, index) => {
-			fruitList[index].thumbnail.url = item.url
+	[GET_FOOD_LIST](state, {foods, foodsImage, typeIndex}) {
+		// console.log(foods)
+		foodsImage.forEach((item, index) => {
+			foods[index].thumbnail.url = item.url
 			// console.log(fruitList.img)
 		})
-		state.fruitList = fruitList
-		console.log(state.fruitList)
+
+		// state.foods[typeIndex] = foods
+		
+		// console.log(state.fruitList)
+		let foodType = state.foodType[typeIndex]
+		// console.log(foodType)
+		state[foodType] = foods
+		// console.log(state[foodType])
+
 	}
 	
 }
