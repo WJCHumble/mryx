@@ -1,7 +1,10 @@
 <template>
   <div id="app">
   	<router-link to="/home"></router-link>
-    <router-view/>
+  	<!-- 缓存路由组件 -->
+  	<keep-alive>
+	    <router-view/>
+  	</keep-alive>
   </div>
 </template>
 

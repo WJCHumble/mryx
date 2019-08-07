@@ -6,22 +6,6 @@
 		  		<Food v-for="(food, index) in $store.state[type]" :key="index" :food="food" @click.native="$router.push(`/fooddetail/${type}/${index}`)">
 		  	    </Food>
 			  </mt-tab-container-item>
-			  <!-- <mt-tab-container-item  id="tab-container2">
-				<Food v-for="(fruit, index) in fruits" :key="index" :food="fruit" @click.native="$router.push(`/fooddetail/${index}`)">
-			    </Food>
-			  </mt-tab-container-item>
-			  <mt-tab-container-item id="tab-container3">
-				<Food v-for="(fruit, index) in fruits" :key="index" :food="fruit" @click.native="$router.push(`/fooddetail/${index}`)">
-		  	    </Food>
-			  </mt-tab-container-item>
-			  <mt-tab-container-item id="tab-container4">
-		    	<Food v-for="(fruit, index) in fruits" :key="index" :food="fruit" @click.native="$router.push(`/fooddetail/${index}`)">
-		        </Food>
-			  </mt-tab-container-item>
-			  <mt-tab-container-item id="tab-container5">
-		    	<Food v-for="(fruit, index) in fruits" :key="index" :food="fruit" @click.native="$router.push(`/fooddetail/${index}`)">
-		        </Food>
-			  </mt-tab-container-item> -->
 			</mt-tab-container>
 		</v-touch>
 	</div>
@@ -30,6 +14,7 @@
 <script>
 	import {mapState} from 'vuex'
 	import Food from '../Food/Food.vue'
+	import {Indicator} from 'mint-ui'
 	//引用swiper
 	import Swiper from 'swiper' 
 	//引入css文件
@@ -39,6 +24,9 @@
 			if(this.fruits.length === 0) {
 				this.$store.dispatch('getFoods', {foodIndex: 0})
 			}		
+		},
+		updated() {
+			this.Indicator.close()
 		},
 		data() {
 			return {
@@ -52,11 +40,10 @@
 					'tab-container4',
 					'tab-container5',
 				]
-				// foods: this.$store.state.foods[0]
 			}
 		},
 		computed: {
-			...mapState(['food', 'fruits', 'foodType']),
+			...mapState(['food', 'fruits', 'foodType', 'Indicator']),
 			selectedIndex: {
 				get() {
 					return this.currentIndex = `tab-container${this.$store.state.selectedIndex + 1}`
@@ -72,11 +59,9 @@
 		},
 		methods: {
 			swipeLfet() {
-				// this.$store.dispatch('updateSelectedIndex', 1)
 				this.$emit('v-swipeLeft')
 			},
 			swipeRight() {
-				// {swipIndex}
 				this.$emit('v-swipeRight')
 			},
 		}

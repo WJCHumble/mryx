@@ -46,6 +46,7 @@
 	import NavBar from '../../components/NavBar/NavBar.vue'
 	import MiniCart from '../../components/MiniCart/MiniCart.vue'
 	import FoodList from '../../components/FoodList/FoodList.vue'
+	import {Indicator} from 'mint-ui'
 	//使用swiper  
 	//引用swiper
 	import Swiper from 'swiper' 
@@ -74,7 +75,7 @@
 			}
 		},
 		computed: {
-			...mapState(['selectedIndex'])
+			...mapState(['selectedIndex', 'fruits'])
 		},
 		components: {
 			HeaderTop,
@@ -83,6 +84,18 @@
 			CitySelector,
 			MiniCart,
 			FoodList,
+		},
+		watch: {
+			fruits: function () {
+				// Indicator.close()
+			}
+		},
+		beforeCreate() {
+			//在显示页面前加载提示框
+			// Indicator.open()
+			Indicator.open()
+			this.$store.state.Indicator = Indicator
+			// console.log(this);
 		},
 		updated() {
 			    // console.log(1111)
@@ -98,7 +111,7 @@
 			    this.$nextTick(() => {
 			    	this._swiperInit()
 			    	this._initScroll()
-
+			    	// Indicator.close()
 			    	// console.log(111)
 			    })
 			    

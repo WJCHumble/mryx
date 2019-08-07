@@ -44,5 +44,6 @@ export default {
 			doorNumber: '307',
 			type: '学校'
 		}
-	]
+	],
+	Indicator: {} //定义一个加载对象
 }

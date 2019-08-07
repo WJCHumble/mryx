@@ -8,7 +8,7 @@
 		</HeaderTop>
 		<div class="wrapper">
 			<div class="content">
-				<Food v-for="(food, index) in fruitList" :key="index" :food="food" v-if="food.count"/>
+				<Food v-for="(food, index) in cartFoods" :key="index" :food="food" v-if="food.count"/>
 				<!-- <MiniCart/> -->
 				
 				<div class="food_empty" v-if="!cartFoods[0]" @click="$router.replace('/home')"></div>
@@ -60,7 +60,7 @@
 			RadioButton
 		},
 		computed: {
-			...mapState(['cartFoods', 'food', 'totalCount', 'fruitList'])
+			...mapState(['cartFoods', 'food', 'totalCount'])
 		}
 	}
 </script>

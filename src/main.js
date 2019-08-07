@@ -14,6 +14,7 @@ import {
 	TabContainer,
 	TabContainerItem,
 	Toast,
+	Picker,
 	// MessageBox,
 } from 'mint-ui'
 import App from './App'
@@ -35,6 +36,9 @@ Vue.component(Cell.name, Cell)
 Vue.component(Button.name, Button)
 Vue.component(TabContainer.name, TabContainer)
 Vue.component(TabContainerItem.name, TabContainerItem)
+Vue.component(Picker.name, Picker)
+
+// Vue.use(Indicator)
 Vue.use(VueTouch, {name: 'v-touch'})
 Vue.use(VueLazyload, {
 	loading

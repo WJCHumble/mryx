@@ -24,7 +24,7 @@
 </template>
 
 <script>
-	import Vue from 'vue'
+	import {Indicator} from 'mint-ui'
 	import {mapState} from 'vuex'
 	export default {
 		mounted() {
@@ -58,22 +58,23 @@
 		data() {
 			return {
 				selectedIndex: '0',
-				fixedBoolean: true
+				fixedBoolean: true,
 			}
 		},
 		computed: {
-			...mapState(['foodType'])
+			...mapState(['foodType']),
 		},
 		methods: {
 			updateSelectedIndex(index) {
 				this.$store.dispatch('updateSelectedIndex', index)
 				this.selectedIndex = this.$store.state.selectedIndex
-				let foodType = this.foodType[index]
-				if(this.$route.path === '/home' && !this.$store.state[foodType].length) {
+				let currentFoodType = this.foodType[index]
+				if(this.$route.path === '/home' && !this.$store.state[currentFoodType].length) {
 					this.$store.dispatch('getFoods', {foodIndex: index})
-					console.log(111)
+					Indicator.open()
+					this.$store.state.Indicator = Indicator
 				}
-			}
+			},
 		}
 	}
 </script>
